@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work18整理格式2</title>
+	</head>
+	<body>
+		<textarea name="" id="txt1" rows="10" cols="30"></textarea>
+		<input type="button" id="btn" value="整理" />
+		<textarea name="" id="txt2" rows="10" cols="30"></textarea>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obtn=document.getElementById("btn");
+			var otxt1=document.getElementById("txt1");
+			var otxt2=document.getElementById("txt2");
+			
+			obtn.onclick=function(){
+				otxt2.value=otxt1.value.replace(/$/mg,"asafd");
+			}
+		
+		}
+	</script>
+</html>
